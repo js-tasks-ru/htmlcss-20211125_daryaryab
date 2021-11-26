@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  color: #ffffff;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  background-color:#f01414c9;
+  margin: 0;
+  padding: 10px;
+}
+
+.header .nav-menu {
+  background-color: #ffc107;
+  padding: 10px;
+}
+
+.header .nav-menu-link {
+  font-size: 1.25em;
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+.main {
+  background-color:#0aa60a;
+  padding: 10px;
+}
+
+.main .article {
+  background-color:#5656ff;
+  padding: 10px;
+  margin: 0 0 10px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #c604c6;
+  padding: 20px;
+  font-size: 1.5em;
+}
