@@ -1,1 +1,73 @@
 /* Стилизация кнопки */
+.buttons {
+  display: inline-block;
+}
+
+.buttons__item {
+  margin: 10px;
+}
+
+.button {
+  width: 182px;
+  min-height: 48px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: none;
+  font: 500 16px 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: opacity 200ms ease-in-out;
+}
+
+.button_type_primary {
+  background-color: #4263EB;
+  border: 1px solid #4263EB;
+  color: #ffffff;
+}
+
+.button_type_primary.button_disabled:hover {
+  background-color: #4263EB;
+  border: 1px solid #4263EB;
+}
+
+.button_type_primary:hover {
+  background-color: #2342C0;
+  border: 1px solid #2342C0;
+}
+
+.button_type_secondary {
+  background-color: #7048E8;
+  border: 1px solid #7048E8;
+  color: #ffffff;
+}
+
+.button_type_secondary.button_disabled:hover {
+  background-color: #7048E8;
+  border: 1px solid #7048E8;
+}
+
+.button_type_secondary:hover {
+  background-color: #5028C6;
+  border: 1px solid #5028C6;
+}
+
+.button_type_alternate {
+  background-color: #ffffff;
+  border: 1px solid #ACB5BD;
+  color: #495057;
+}
+
+.button_type_alternate.button_disabled:hover {
+  background-color: #ffffff;
+  border: 1px solid #ACB5BD;
+}
+
+.button_type_alternate:hover {
+  border: 1px solid #212429;
+}
+
+.button_disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
