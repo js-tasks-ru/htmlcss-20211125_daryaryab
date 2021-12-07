@@ -1,0 +1,64 @@
+@import '../../assets/css/main.css';
+
+.skeleton {
+  max-width: 579px;
+  background-color: var(--white);
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.skeleton__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 24px;
+}
+
+.skeleton__body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  margin: 0 0 8px;
+}
+
+.skeleton__content {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 8px
+}
+
+.skeleton__content-item {
+  display: flex;
+  width: 100%;
+}
+
+.skeleton__img {
+  width: 64px;
+  height: 64px;
+  background-color: var(--grey-2);
+  border-radius: 50%;
+  margin: 0 16px 0 0;
+}
+
+.skeleton__row {
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+
+}
+
+.skeleton_row_small {
+  max-width: 172px;
+}
+
+.skeleton_row_medium {
+  max-width: 257px;
+}
+
+.skeleton_row_large {
+  max-width: 515px;
+}
