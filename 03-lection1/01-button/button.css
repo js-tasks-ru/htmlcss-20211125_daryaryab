@@ -1,12 +1,9 @@
-@import '../../assets/css/main.css';
-/* Стилизация кнопки */
-
 .button {
   width: 182px;
   height: 48px;
   border-radius: 8px;
   text-align: center;
-  padding: 15px;
+  padding: 15px 14px;
   box-sizing: border-box;
   box-shadow: none;
   font: 500 16px/18px 'Roboto', sans-serif;
