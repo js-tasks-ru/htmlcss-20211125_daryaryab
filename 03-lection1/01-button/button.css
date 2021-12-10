@@ -19,7 +19,7 @@
 
 .button_type_primary:hover {
   background-color: var(--primary-btn-hover);
-  border: 1px solid var(--primary-btn-hover);
+  border-color: var(--primary-btn-hover);
 }
 
 .button_type_secondary {
@@ -30,7 +30,7 @@
 
 .button_type_secondary:hover {
   background-color: var(--secondary-btn-hover);
-  border: 1px solid var(--secondary-btn-hover);
+  border-color: var(--secondary-btn-hover);
 }
 
 .button_type_alternate {
@@ -40,7 +40,7 @@
 }
 
 .button_type_alternate:hover {
-  border: 1px solid var(--black);
+  border-color: var(--black);
 }
 
 .button_disabled {
