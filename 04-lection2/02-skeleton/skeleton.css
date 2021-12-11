@@ -1,5 +1,3 @@
-@import '../../assets/css/main.css';
-
 .skeleton {
   max-width: 579px;
   background-color: var(--white);
@@ -21,14 +19,13 @@
   flex-wrap: wrap;
   gap: 8px;
   width: 100%;
-  margin: 0 0 8px;
 }
 
 .skeleton__content {
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
-  gap: 8px
+  gap: 8px;
 }
 
 .skeleton__content-item {
@@ -51,14 +48,14 @@
 
 }
 
-.skeleton_row_small {
-  max-width: 172px;
+.skeleton__row_small {
+  max-width: 38%;
 }
 
-.skeleton_row_medium {
-  max-width: 257px;
+.skeleton__row_medium {
+  max-width: 58%;
 }
 
-.skeleton_row_large {
-  max-width: 515px;
+.skeleton__row_large {
+  max-width: 98%;
 }
