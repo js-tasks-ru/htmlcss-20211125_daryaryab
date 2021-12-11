@@ -1,0 +1,12 @@
+.header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--grey-2);
+    text-align: center;
+    padding: 96px 0 77px;
+    box-sizing: border-box;
+}
+
+.header__title {
+    font: 500 50px/64px 'Inter', 'sans-serif';
+    color: var(--black);
+}
