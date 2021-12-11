@@ -1,11 +1,8 @@
-@import '../../assets/css/main.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
 .histogram {
   display: flex;
   flex-wrap: wrap;
   padding: 16px 24px;
-  width: 354px;
+  max-width: 354px;
   background-color: var(--white);
   border: 1px solid var(--grey-3);
   box-sizing: border-box;
@@ -33,19 +30,19 @@
 
 .histogram__header-link {
   font: 400 16px/24px 'Inter', sans-serif;
-  color: #4263EB;
+  color: var(--dark-blue);
 }
 
 .histogram__content {
   display: flex;
   width: 100%;
-  margin: 39px 0 8px;
+  margin: 39px 0 0;
   align-items: baseline;
   justify-content: space-between;
   gap: 1px;
 }
 
 .histogram__content-chart {
-  width: 9px;
-  background: #4263EB;
+  flex: 1 1 9px;
+  background-color: var(--dark-blue);
 }
