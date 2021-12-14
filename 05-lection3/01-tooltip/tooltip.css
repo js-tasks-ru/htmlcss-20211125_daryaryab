@@ -27,7 +27,7 @@
   min-height: 45px;
   align-items: center;
   justify-content: center;
-  background-color: var(--dark-blue);  
+  background-color: var(--blue);  
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 10px;
   box-sizing: border-box;
@@ -40,5 +40,5 @@
   left: 50%;
   transform: translateX(-50%);
   border: 14px solid transparent;
-  border-top: 6px solid var(--dark-blue);
+  border-top: 6px solid var(--blue);
 }
