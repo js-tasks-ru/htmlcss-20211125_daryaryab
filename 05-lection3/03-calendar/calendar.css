@@ -47,7 +47,7 @@
 }
 
 .calendar__item_selected-day {
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
   color: var(--white);
 }
 
