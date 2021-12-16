@@ -1,6 +1,8 @@
 @import '../../node_modules/normalize.css/normalize.css';
 @import '../fonts/fonts.css';
 @import '../../components/header.css';
+@import '../../components/preview.css';
+@import '../../components/template.css';
 @import '../../components/footer.css';
 
 
@@ -22,7 +24,6 @@
     --grey-5: #F9FAFC;
     --grey-6: #90A0B7;
     --grey-7: #334D6E;
-
     --error: var(--red);
     --success: var(--blue);
 
