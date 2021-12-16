@@ -1,4 +1,10 @@
+@import '../../node_modules/normalize.css/normalize.css';
 @import '../fonts/fonts.css';
+@import '../../components/header.css';
+@import '../../components/preview.css';
+@import '../../components/template.css';
+@import '../../components/footer.css';
+
 
 :root {
     --white: #ffffff;
@@ -15,10 +21,9 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
-
-    --grey-5: #334D6E;
+    --grey-5: #F9FAFC;
     --grey-6: #90A0B7;
-
+    --grey-7: #334D6E;
     --error: var(--red);
     --success: var(--blue);
 
@@ -30,4 +35,15 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.content-wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: var(--grey-5);
+    min-height: 500px;
 }
