@@ -32,23 +32,6 @@
   font: 400 16px/24px 'Inter', sans-serif;
 }
 
-.modal__btn {
-  width: 189px;
-  height: 48px;
-  border-radius: 8px;
-  text-align: center;
-  padding: 15px 14px;
-  box-sizing: border-box;
-  box-shadow: none;
-  font: 500 16px/18px 'Roboto', sans-serif;
-  cursor: pointer;
-  transition: opacity 200ms ease-in-out;
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
-  color: var(--white);
-  margin: 100px;
-}
-
 .modal {
   display: none;
   position: fixed; 
@@ -58,4 +41,8 @@
   width: 100%; 
   height: 100%; 
   background-color: rgba(196, 196, 196, .5);
+}
+
+.buttons__item {
+  margin: 100px;
 }
