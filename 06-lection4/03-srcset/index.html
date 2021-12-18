@@ -5,6 +5,12 @@
         <link rel="stylesheet" href="./srcset.css">
     </head>
     <body>
-
+        <div class="picture">
+            <img srcset="./public/forest_400.jpg,
+                         ./public/forest_768.jpg 2x"
+                 sizes="(max-width: 400px) 400px,
+                        (min-width: 768px) 768px"
+                 src="./public/forest_768.jpg" alt="forest" class="picture__img"/>
+        </div>
     </body>
 </html>
