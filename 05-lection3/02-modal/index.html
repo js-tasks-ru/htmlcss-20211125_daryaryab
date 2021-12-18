@@ -3,10 +3,32 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
         <link rel="stylesheet" href="./modal.css">
         <title>Modal</title>
+        <style>
+            .buttons__item {
+                margin: 100px;
+            }
+        </style>
     </head>
     <body>
+        <button id="modal-open" class="buttons__item button button_type_primary">Open modal</button>
+
+        <div id="modal" class="modal">
+            <div class="modal__popup">
+                <span id="modal-close" class="modal__icon">
+                    <img src="../../assets/images/modal-icon.svg" alt="modal icon">
+                </span>
+                <h2 class="modal__title">Modal title</h2>
+                <div class="modal__content">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+            </div>
+        </div>
     </body>
     <script src="./index.js"></script> 
 </html>
