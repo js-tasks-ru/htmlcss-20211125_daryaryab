@@ -19,6 +19,7 @@
   top: 12px;
   right: 12px;
   cursor: pointer;
+  fill: var(--black); 
 }
 
 .modal__title {

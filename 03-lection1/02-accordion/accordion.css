@@ -19,21 +19,18 @@
   font: 400 16px/24px 'Inter', sans-serif;
 }
 
-.accordion__summary:after {
-  content: '';
+.accordion__summary-icon {
   position: absolute;
   top: 4px;
   left: 100%;
-  border-right: 2px solid var(--grey-4);
-  border-bottom: 2px solid var(--grey-4);
   width: 10px;
   height: 10px;
-  transform: rotate(45deg);
+  fill: var(--black);
   transition: transform 400ms ease-in-out;
 }
 
-.accordion__item[open] > .accordion__summary:after {
-  transform: rotate(-135deg);
+.accordion__item[open] > .accordion__summary-icon {
+  transform: rotate(45deg);
 }
 
 .accordion__content {
