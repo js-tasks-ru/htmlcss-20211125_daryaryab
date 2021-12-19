@@ -16,3 +16,18 @@
     color: var(--black);
     margin: 32px auto;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 35px 16px;
+        text-align: left;
+    }
+
+    .footer__title {
+        font: 400 28px/38px 'Inter', sans-serif;
+    }
+
+    .footer__text {
+        margin: 16px 0;
+    }
+}

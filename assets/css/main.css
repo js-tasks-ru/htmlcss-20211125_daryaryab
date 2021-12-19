@@ -50,3 +50,7 @@
     background-color: var(--grey-5);
     min-height: 500px;
 }
+
+@media screen and (max-width: 400px) {
+    
+}
