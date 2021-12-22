@@ -4,8 +4,43 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                margin: 50px;
+            }
+        </style>
     </head>
     <body>
+        <div class="container">
+            <label class="field">
+                <span class="field__label">Label</span>
+                <input type="text" class="field__input" placeholder="Placeholder" />
+                <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+            </label>
 
+            <label class="field">
+                <span class="field__label">Success</span>
+                <input type="text" class="field__input field__input_success" value="Success" />
+                <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+            </label>
+
+            <label class="field">
+                <span class="field__label">Focus</span>
+                <input type="text" class="field__input" value="Filled Input" />
+                <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+            </label>
+
+            <label class="field">
+                <span class="field__label">Error</span>
+                <input type="text" class="field__input field__input_invalid" value="Error" />
+                <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+            </label>
+        </div>
     </body>
 </html>
