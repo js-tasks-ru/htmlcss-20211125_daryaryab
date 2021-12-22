@@ -4,8 +4,50 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
+        <style>
+            .container {           
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin: 50px;
+            }
+        </style>
     </head>
     <body>
+        <div class="container">
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox_hidden" tabindex="1">
+                <span class="checkbox__item">
+                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox__icon">
+                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+                Default
+            </label>
 
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox_hidden" tabindex="1" checked>
+                <span class="checkbox__item">
+                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="checkbox__icon">
+                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+                Checked
+            </label>
+
+            <label class="checkbox checkbox_disabled">
+                <input type="checkbox" class="checkbox_hidden" tabindex="1">
+                <span class="checkbox__item">
+                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="checkbox__icon">
+                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+                Disabled
+            </label>
+        </div> 
     </body>
 </html>
