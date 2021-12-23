@@ -15,36 +15,91 @@
         </header>
         <main class="main">
             <div class="content-wrapper">
-                <div class="preview">
-                    <div class="preview__item">
-                        <div class="preview__item-content"></div>
-                        <div class="preview__item-title">Tooltip</div>
-                        <div class="preview__item-subtitle">Element</div>
+                <div class="tabs">
+                    <input type="radio" id="all-tab" name="tab" class="tabs__input_hidden" checked>
+                    <input type="radio" id="complex-tab" name="tab" class="tabs__input_hidden">
+                    <input type="radio" id="simple-tab" name="tab" class="tabs__input_hidden">
+                
+                    <div class="tabs__scroller">
+                        <label for="all-tab" class="tabs__scroller-item">All components</label>
+                        <label for="complex-tab" class="tabs__scroller-item">Complex</label>
+                        <label for="simple-tab" class="tabs__scroller-item">Simple</label>
                     </div>
-                    <div class="preview__item">
-                        <div class="preview__item-content"></div>
-                        <div class="preview__item-title">Custom form elements</div>
-                        <div class="preview__item-subtitle">Container</div>
+
+                    <div class="tabs__content tabs__content_all">
+                        <div class="preview">
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Tooltip</div>
+                                <div class="preview__item-subtitle">Element</div>
+                            </div>
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Custom form elements</div>
+                                <div class="preview__item-subtitle">Container</div>
+                            </div>
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Calendar</div>
+                                <div class="preview__item-subtitle">Container</div>
+                            </div>
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Modal dialog</div>
+                                <div class="preview__item-subtitle">Container</div>
+                            </div>
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Histogram</div>
+                                <div class="preview__item-subtitle">Container</div>
+                            </div>
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Avatar</div>
+                                <div class="preview__item-subtitle">Element</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="preview__item">
-                        <div class="preview__item-content"></div>
-                        <div class="preview__item-title">Calendar</div>
-                        <div class="preview__item-subtitle">Container</div>
+                
+                    <div class="tabs__content tabs__content_complex">
+                        <div class="preview">
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Custom form elements</div>
+                                <div class="preview__item-subtitle">Container</div>
+                            </div>
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Calendar</div>
+                                <div class="preview__item-subtitle">Container</div>
+                            </div>
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Modal dialog</div>
+                                <div class="preview__item-subtitle">Container</div>
+                            </div>
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Histogram</div>
+                                <div class="preview__item-subtitle">Container</div>
+                            </div>
+                        </div>
+                
                     </div>
-                    <div class="preview__item">
-                        <div class="preview__item-content"></div>
-                        <div class="preview__item-title">Modal dialog</div>
-                        <div class="preview__item-subtitle">Container</div>
-                    </div>
-                    <div class="preview__item">
-                        <div class="preview__item-content"></div>
-                        <div class="preview__item-title">Histogram</div>
-                        <div class="preview__item-subtitle">Container</div>
-                    </div>
-                    <div class="preview__item">
-                        <div class="preview__item-content"></div>
-                        <div class="preview__item-title">Avatar</div>
-                        <div class="preview__item-subtitle">Element</div>
+                    <div class="tabs__content tabs__content_simple">
+                        <div class="preview">
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Tooltip</div>
+                                <div class="preview__item-subtitle">Element</div>
+                            </div>
+                            
+                            <div class="preview__item">
+                                <div class="preview__item-content"></div>
+                                <div class="preview__item-title">Avatar</div>
+                                <div class="preview__item-subtitle">Element</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
