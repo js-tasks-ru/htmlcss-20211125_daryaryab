@@ -1,17 +1,18 @@
-.tabs {
-  position: relative;
-  top: -38px;
-}
-
-.tabs__input_hidden {
+.tabs__input {
   position: absolute;
   clip: rect(0,0,0,0);
   opacity: 0;
 }
 
-#all-tab:checked ~ .tabs__scroller > .tabs__scroller-item[for="all-tab"],
-#complex-tab:checked ~ .tabs__scroller > .tabs__scroller-item[for="complex-tab"],
-#simple-tab:checked ~ .tabs__scroller > .tabs__scroller-item[for="simple-tab"] {
+.tabs__scroller {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--grey-2);
+  padding: 12px 28px;
+}
+
+#all-tab:checked ~ .tabs__scroller >  .content-wrapper > .tabs__scroller-item[for="all-tab"],
+#complex-tab:checked ~ .tabs__scroller > .content-wrapper > .tabs__scroller-item[for="complex-tab"],
+#simple-tab:checked ~ .tabs__scroller > .content-wrapper > .tabs__scroller-item[for="simple-tab"] {
   color: var(--black);
   border-bottom: 5px solid var(--black);
 }
@@ -42,4 +43,11 @@
 
 .tabs__content {
   display: none;
+  background-color: var(--grey-5);
+}
+
+@media screen and (max-width: 768px) {
+  .tabs__scroller {
+    padding: 12px 16px;
+  }
 }
