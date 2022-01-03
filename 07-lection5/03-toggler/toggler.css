@@ -1,5 +1,5 @@
 .toggler {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   color: var(--grey-4);
 }
@@ -27,6 +27,10 @@
   top: 50%;
   left: 2px;
   transform: translateY(-50%);
+}
+
+.toggler__label {
+  border-bottom: 1px solid transparent;
 }
 
 .toggler__input-hidden:focus ~ .toggler__label,
