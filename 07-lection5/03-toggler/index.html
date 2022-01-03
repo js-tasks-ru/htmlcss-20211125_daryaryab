@@ -4,8 +4,34 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
+        <style>
+            .contaniner {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin: 50px;
+            }
+        </style>
     </head>
     <body>
+        <div class="contaniner">
+            <label class="toggler">
+                <input type="checkbox" class="toggler__input-hidden" tabindex="1">
+                <span class="toggler__point"></span>
+                <span class="toggler__label">Off</span>
+            </label>
 
+            <label class="toggler">
+                <input type="checkbox" class="toggler__input-hidden" checked tabindex="1">
+                <span class="toggler__point"></span>
+                <span class="toggler__label">On</span>
+            </label>
+
+            <label class="toggler">
+                <input type="checkbox" class="toggler__input-hidden" disabled tabindex="1">
+                <span class="toggler__point"></span>
+                <span class="toggler__label">Disabled</span>
+            </label>
+        </div>
     </body>
 </html>
