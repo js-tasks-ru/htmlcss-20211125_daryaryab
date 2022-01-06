@@ -1,73 +1,73 @@
-.field {
-  display: inline-flex;
-  flex-wrap: wrap;
-  max-width: 350px;
-  position: relative;
-   margin: 0 0 16px;
+.field__wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    position: relative;
+    margin: 0 0 16px;
 }
 
 .field__input {
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  background-color: var(--white);
-  border: 1px solid var(--grey-2);
-  border-radius: 8px;
-  padding: 17px 17px 13px 24px;
-  box-sizing: border-box;
-  cursor: pointer;
-  font: 400 20px/26px 'Inter', sans-serif;
-  color: var(--grey-4);
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    padding: 17px 17px 13px 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font: 400 20px/26px 'Inter', sans-serif;
+    color: var(--grey-4);
 }
 
 .field__input::placeholder {
-  color: var(--grey-2);
+    color: var(--grey-2);
 }
 
 .field__input:hover,
 .field__input:focus {
-  border: 1px solid var(--blue);
+    border: 1px solid var(--blue);
 }
 
 .field__label {
-  display: inline-flex;
-  width: 100%;
-  font: 500 12px/18px 'Inter', sans-serif;
-  margin: 0 0 5px;
-  color: var(--grey-3);
-  text-transform: uppercase;
+    display: inline-flex;
+    width: 100%;
+    font: 500 12px/18px 'Inter', sans-serif;
+    margin: 0 0 5px;
+    color: var(--grey-3);
+    text-transform: uppercase;
 }
 
 .field__icon {
-  display: none;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  right: 18px;
-  top: 50%;
-  transform: translateY(-50%);
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .field__input_invalid {
-  border: 1px solid var(--red);
+    border: 1px solid var(--red);
 }
 
 .field__input_invalid ~ .field__icon_invalid {
-  display: block;
+    display: block;
 }
 
 .field__input_invalid:focus,
 .field__input_invalid:hover {
-  border: 1px solid var(--red);
+    border: 1px solid var(--red);
 }
 
 .field__input_success ~ .field__icon_success {
-  display: block;
+    display: block;
 }
 
 .field__input_success:focus,
 .field__input_success:hover {
-  border: 1px solid var(--grey-2);
+    border: 1px solid var(--grey-2);
 }
 
 

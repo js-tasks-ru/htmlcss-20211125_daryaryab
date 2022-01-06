@@ -14,33 +14,41 @@
     </head>
     <body>
         <div class="container">
-            <label class="field__label" for="input1">Label</label>
-            <span class="field">
-                <input id="input1" type="text" class="field__input" placeholder="Placeholder" />
-                <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
-                <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
-            </span>
+            <div class="field">
+                <label class="field__label" for="input1">Label</label>
+                <span class="field__wrapper">
+                    <input id="input1" type="text" class="field__input" placeholder="Placeholder" />
+                    <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                    <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+                </span>
+            </div>
 
-            <label class="field__label" for="input2">Success</label>
-            <span class="field">
-                <input id="input2" type="text" class="field__input field__input_success" value="Success" />
-                <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
-                <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
-            </span>
+            <div class="field field_success">
+                <label class="field__label" for="input2">Success</label>
+                <span class="field__wrapper">
+                    <input id="input2" type="text" class="field__input field__input_success" value="Success" />
+                    <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                    <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+                </span>
+            </div>
 
-            <label class="field__label" for="input3">Focus</label>
-            <span class="field">
-                <input id="input3" type="text" class="field__input" value="Filled Input" />
-                <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
-                <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
-            </span>
+            <div class="field">
+                <label class="field__label" for="input3">Focus</label>
+                <span class="field__wrapper">
+                    <input id="input3" type="text" class="field__input" value="Filled Input" />
+                    <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                    <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+                </span>
+            </div>
 
-            <label class="field__label" for="input4">Error</label>
-            <span class="field">
-                <input id="input4" type="text" class="field__input field__input_invalid" value="Error" />
-                <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
-                <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
-            </span>
+            <div class="field field_error">
+                <label class="field__label" for="input4">Error</label>
+                <span class="field__wrapper">
+                    <input id="input4" type="text" class="field__input field__input_invalid" value="Error" />
+                    <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                    <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+                </span>
+            </div>
         </div>
     </body>
 </html>
