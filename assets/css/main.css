@@ -4,6 +4,7 @@
 @import '../../components/preview.css';
 @import '../../components/template.css';
 @import '../../components/footer.css';
+@import '../../components/tabs.css';
 
 
 :root {
@@ -44,13 +45,4 @@
 .content-wrapper {
     max-width: 1110px;
     margin: 0 auto;
-}
-
-.main {
-    background-color: var(--grey-5);
-    min-height: 500px;
-}
-
-@media screen and (max-width: 400px) {
-    
 }
