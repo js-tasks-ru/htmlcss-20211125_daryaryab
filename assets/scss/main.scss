@@ -6,7 +6,7 @@
 @import '../../components/preview.scss';
 @import '../../components/template.scss';
 @import '../../components/footer.scss';
-
+@import '../../components/tabs.scss';
 
 
 :root {
@@ -47,9 +47,4 @@
 .content-wrapper {
     max-width: 1110px;
     margin: 0 auto;
-}
-
-.main {
-    background-color: var(--grey-5);
-    min-height: 500px;
 }
