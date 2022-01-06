@@ -12,9 +12,32 @@
     margin: 40px 0;
 }
 
+.header__wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .header__logo {
     width: 110px;
     height: 32px;
+}
+
+.header__menu-icon {
+    display: none;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    stroke: var(--grey-4);
+}
+
+.header__menu-icon.icon_close:after {
+    content: '';
+    width: 28px;
+    height: 28px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: var(--grey-2);
 }
 
 @media screen and (max-width: 768px) {
@@ -30,5 +53,9 @@
     .header__title {
         font: 400 28px/38px 'Inter', sans-serif;
         margin: 48px 0 32px;
+    }
+
+    .header__menu-icon {
+        display: flex;
     }
 }

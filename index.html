@@ -7,8 +7,19 @@
     <body>
         <header class="header">
             <div class="content-wrapper">
-                <div class="header__logo">
-                    <img src="./assets/images/logo.svg" alt="logo">
+                <div class="header__wrapper">
+                    <div class="header__menu">
+                        <svg id="burger-menu-open" class="header__menu-icon">
+                            <use xlink:href="../../assets/images/sprite.svg#menuIconOpen"></use>
+                        </svg>
+
+                        <svg id="burger-menu-close" class="header__menu-icon icon_close">
+                            <use xlink:href="../../assets/images/sprite.svg#menuIconClose"></use>
+                        </svg>
+                    </div>
+                    <div class="header__logo">
+                        <img src="./assets/images/logo.svg" alt="logo">
+                    </div>
                 </div>
                 <h1 class="header__title">Reusable component library</h1>
             </div>
@@ -113,5 +124,6 @@
                 you're most curious about.</p>
             </div>
         </footer>
+        <script src="./index.js"></script>
     </body>
 </html>
