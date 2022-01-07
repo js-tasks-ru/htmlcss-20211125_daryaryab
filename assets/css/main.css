@@ -5,6 +5,7 @@
 @import '../../components/template.css';
 @import '../../components/footer.css';
 @import '../../components/tabs.css';
+@import '../../components/toggler.css';
 
 
 :root {
@@ -34,7 +35,7 @@
     --primary: var(--blue);
     --primary-btn-hover: var(--dark-blue);
     --secondary: var(--purple);
-     --secondary-btn-hover: var(--dark-purple);
+    --secondary-btn-hover: var(--dark-purple);
 }
 
 * {
@@ -46,3 +47,4 @@
     max-width: 1110px;
     margin: 0 auto;
 }
+
