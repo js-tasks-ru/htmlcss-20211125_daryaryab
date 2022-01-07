@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     max-width: 350px;
     position: relative;
-    margin: 0 0 16px;
 }
 
 .field__input {
