@@ -1,0 +1,33 @@
+.footer {
+    border-top: 1px solid var(--grey-2);
+    background-color: var(--white);
+    text-align: center;
+    padding: 70px 0;
+    box-sizing: border-box;
+
+    &__title {
+        font: 500 38px/48px 'Inter', 'sans-serif';
+        color: var(--black);
+    }
+
+    &__text {
+        font: 400 16px/24px 'Inter', 'sans-serif';
+        color: var(--black);
+        margin: 32px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 35px 16px;
+        text-align: left;
+
+        &__title {
+            font: 400 28px/38px 'Inter', sans-serif;
+        }
+
+        &__text {
+            margin: 16px 0;
+        }
+    }
+}

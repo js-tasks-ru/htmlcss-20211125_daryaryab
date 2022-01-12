@@ -1,12 +1,14 @@
-@import '../../node_modules/normalize.css/normalize.css';
-@import '../fonts/fonts.css';
-@import '../../components/header.css';
-@import '../../components/preview.css';
-@import '../../components/template.css';
-@import '../../components/footer.css';
-@import '../../components/tabs.css';
-@import '../../components/toggler.css';
+@import '../fonts/fonts.scss';
 
+@import '../../node_modules/normalize.css/normalize.css';
+
+@import '../../components/header.scss';
+@import '../../components/mobile-menu.scss';
+@import '../../components/preview.scss';
+@import '../../components/template.scss';
+@import '../../components/footer.scss';
+@import '../../components/tabs.scss';
+@import '../../components/toggler.scss';
 
 :root {
     --white: #ffffff;

@@ -1,0 +1,71 @@
+.toggler {
+    display: inline-flex;
+    align-items: center;
+    color: var(--grey-4);
+
+    &__point {
+        position: relative;
+        width: 52px;
+        height: 28px; 
+        background-color: var(--white);
+        border: 1px solid var(--grey-2);
+        padding: 2px;
+        box-sizing: border-box;
+        border-radius: 16px;  
+        margin: 0 12px 0 0;  
+        cursor: pointer;
+        &:after {
+            content: '';
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: var(--grey-2);
+            position: absolute;
+            top: 50%;
+            left: 2px;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__label {
+        border-bottom: 1px solid transparent;
+    }
+
+    &__input-hidden {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        opacity: 0;
+
+        &:focus ~ .toggler__label,
+        &:hover ~ .toggler__label {
+            border-bottom: 1px solid var(--blue);
+        }
+
+        &:checked ~ .toggler__point {
+            background-color: var(--blue);
+            &:after {
+                background-color: var(--white);
+                left: initial;
+                right: 2px;
+            }
+        }
+
+
+        &:checked:focus ~ .toggler__label,
+        &:disabled:focus ~ .toggler__label {
+            border: none;
+        }
+
+        &:disabled ~ .toggler__point {
+            background-color: var(--grey-2);
+            cursor: not-allowed;
+
+            &:after {
+                background-color: var(--grey-3);
+            }
+        }
+    }
+}
+
+
+
