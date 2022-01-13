@@ -3,11 +3,12 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
 @import '../../components/header.scss';
+@import '../../components/mobile-menu.scss';
 @import '../../components/preview.scss';
 @import '../../components/template.scss';
 @import '../../components/footer.scss';
 @import '../../components/tabs.scss';
-
+@import '../../components/toggler.scss';
 
 :root {
     --white: #ffffff;
@@ -36,7 +37,7 @@
     --primary: var(--blue);
     --primary-btn-hover: var(--dark-blue);
     --secondary: var(--purple);
-     --secondary-btn-hover: var(--dark-purple);
+    --secondary-btn-hover: var(--dark-purple);
 }
 
 * {
@@ -48,3 +49,11 @@
     max-width: 1110px;
     margin: 0 auto;
 }
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
