@@ -30,34 +30,351 @@
                 <div class="tabs__content tabs__content_all">
                     <div class="preview">
                         <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Tooltip</div>
+                            <div class="preview__item-content content-center">
+                                <div class="tooltip active">
+                                    <svg class="tooltip__icon">
+                                        <use xlink:href="../../assets/images/sprite.svg#tooltipIcon"></use>
+                                    </svg>
+                                    <div class="tooltip__content">Helper Text</div>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#tooltip"  class="preview__item-title">Tooltip</a>
                             <div class="preview__item-subtitle">Element</div>
                         </div>
                         <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Custom form elements</div>
+                            <div class="preview__item-content">
+                                <div class="field mrg-btn">
+                                    <label class="field__label" for="input1">Label</label>
+                                    <span class="field__wrapper">
+                                        <input id="input1" type="text" class="field__input" placeholder="Placeholder" />
+                                        <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                                        <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+                                    </span>
+                                </div>
+                            
+                                <div class="field field_success mrg-btn">
+                                    <label class="field__label" for="input2">Success</label>
+                                    <span class="field__wrapper">
+                                        <input id="input2" type="text" class="field__input field__input_success" value="Success" />
+                                        <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                                        <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+                                    </span>
+                                </div>
+                            
+                                <div class="field mrg-btn">
+                                    <label class="field__label" for="input3">Focus</label>
+                                    <span class="field__wrapper">
+                                        <input id="input3" type="text" class="field__input" value="Filled Input" />
+                                        <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                                        <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+                                    </span>
+                                </div>
+                                
+                                <div class="field field_error mrg-btn">
+                                    <label class="field__label" for="input4">Error</label>
+                                    <span class="field__wrapper">
+                                        <input id="input4" type="text" class="field__input field__input_invalid" value="Error" />
+                                        <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                                        <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#fields"  class="preview__item-title">Custom form fields</a>
+                            <div class="preview__item-subtitle">Elements</div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="preview__item-content content-center">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" tabindex="1">
+                                    <span class="checkbox__item">
+                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="checkbox__icon">
+                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__label">Default</span>
+                                </label>
+                    
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" tabindex="1" checked>
+                                    <span class="checkbox__item">
+                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="checkbox__icon">
+                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__label">Checked</span>
+                                </label>
+                    
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" tabindex="1" disabled>
+                                    <span class="checkbox__item">
+                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="checkbox__icon">
+                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__label">Disabled</span>
+                                </label>
+                    
+                                <label class="radio-btn">
+                                    <input type="radio" class="radio-btn__input" tabindex="1">
+                                    <span class="radio-btn__item"></span>
+                                    <span class="radio-btn__label">Default</span>
+                                </label>
+                    
+                                <label class="radio-btn">
+                                    <input type="radio" class="radio-btn__input" tabindex="1" checked>
+                                    <span class="radio-btn__item"></span>
+                                    <span class="radio-btn__label">Checked</span>
+                                </label>
+                    
+                                <label class="radio-btn">
+                                    <input type="radio" class="radio-btn__input" tabindex="1" disabled>
+                                    <span class="radio-btn__item"></span>
+                                    <span class="radio-btn__label">Disabled</span>
+                                </label>
+                    
+                                <label class="toggler">
+                                    <input type="checkbox" class="toggler__input-hidden" tabindex="1">
+                                    <span class="toggler__point"></span>
+                                    <span class="toggler__label">Off</span>
+                                </label>
+                    
+                                <label class="toggler">
+                                    <input type="checkbox" class="toggler__input-hidden" checked tabindex="1">
+                                    <span class="toggler__point"></span>
+                                    <span class="toggler__label">On</span>
+                                </label>
+                    
+                                <label class="toggler">
+                                    <input type="checkbox" class="toggler__input-hidden" disabled tabindex="1">
+                                    <span class="toggler__point"></span>
+                                    <span class="toggler__label">Disabled</span>
+                                </label>
+                            </div>
+                            <a href="/pages/template.html#controls"  class="preview__item-title">Custom form controls</a>
+                            <div class="preview__item-subtitle">Elements</div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="preview__item-content">
+                                <div class="calendar">
+                                    <div class="calendar__title">October 2019</div>
+                                    <div class="calendar__wrapper">
+                                        <div class="calendar__inner">
+                                            <span class="calendar__item calendar__item_day">Mon</span>
+                                            <span class="calendar__item calendar__item_day">Tue</span>
+                                            <span class="calendar__item calendar__item_day">Wed</span>
+                                            <span class="calendar__item calendar__item_day">Thu</span>
+                                            <span class="calendar__item calendar__item_day">Fri</span>
+                                            <span class="calendar__item calendar__item_day">Sat</span>
+                                            <span class="calendar__item calendar__item_day">Sun</span>
+                                            <span class="calendar__item"></span>
+                                            <span class="calendar__item"></span>
+                                            <span class="calendar__item"></span>
+                                            <span class="calendar__item"></span>
+                                            <span class="calendar__item">1</span>
+                                            <span class="calendar__item">2</span>
+                                            <span class="calendar__item">3</span>
+                                            <span class="calendar__item">4</span>
+                                            <span class="calendar__item">5</span>
+                                            <span class="calendar__item">6</span>
+                                            <span class="calendar__item">7</span>
+                                            <span class="calendar__item">8</span>
+                                            <span class="calendar__item">9</span>
+                                            <span class="calendar__item">10</span>
+                                            <span class="calendar__item">11</span>
+                                            <span class="calendar__item">12</span>
+                                            <span class="calendar__item">13</span>
+                                            <span class="calendar__item">14</span>
+                                            <span class="calendar__item">15</span>
+                                            <span class="calendar__item">16</span>
+                                            <span class="calendar__item">17</span>
+                                            <span class="calendar__item calendar__item_selected-day">18</span>
+                                            <span class="calendar__item calendar__item_selected">19</span>
+                                            <span class="calendar__item calendar__item_selected">20</span>
+                                            <span class="calendar__item calendar__item_selected">21</span>
+                                            <span class="calendar__item calendar__item_selected">22</span>
+                                            <span class="calendar__item calendar__item_selected-day">23</span>
+                                            <span class="calendar__item">24</span>
+                                            <span class="calendar__item">25</span>
+                                            <span class="calendar__item">26</span>
+                                            <span class="calendar__item">27</span>
+                                            <span class="calendar__item">28</span>
+                                            <span class="calendar__item">29</span>
+                                            <span class="calendar__item">30</span>
+                                            <span class="calendar__item">31</span>
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#calendar"  class="preview__item-title">Calendar</a>
                             <div class="preview__item-subtitle">Container</div>
                         </div>
                         <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Calendar</div>
+                            <div class="preview__item-content content-center">
+                                <button id="modal-open" class="buttons__item button button_type_primary">Open modal</button>
+                                
+                                <div id="modal" class="modal">
+                                    <div class="modal__popup">
+                                        <svg id="modal-close" class="modal__icon">
+                                            <use xlink:href="../../assets/images/sprite.svg#closeIcon"></use>
+                                        </svg>
+                                
+                                        <h2 class="modal__title">Modal title</h2>
+                                        <div class="modal__content">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                                            velit
+                                            mollit. Exercitation veniam consequat sunt nostrud amet.
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                                            velit
+                                            mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#modal"  class="preview__item-title">Modal dialog</a>
                             <div class="preview__item-subtitle">Container</div>
                         </div>
                         <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Modal dialog</div>
+                            <div class="preview__item-content">
+                                <div class="histogram">
+                                    <div class="histogram__header">
+                                        <h3 class="histogram__header-title">
+                                            Total orders
+                                            <span class="histogram__header-subtitle">50254</span>
+                                        </h3>
+                                        <a href="/pages/template.html#"  class="histogram__header-link">View all</a>
+                                    </div>
+                                    <div class="histogram__content">
+                                        <div class="histogram__content-chart" style="height:50px"></div>
+                                        <div class="histogram__content-chart" style="height:35px"></div>
+                                        <div class="histogram__content-chart" style="height:22px"></div>
+                                        <div class="histogram__content-chart" style="height:39px"></div>
+                                        <div class="histogram__content-chart" style="height:22px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:39px"></div>
+                                        <div class="histogram__content-chart" style="height:50px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:22px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:35px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:50px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:39px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:22px"></div>
+                                        <div class="histogram__content-chart" style="height:35px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:39px"></div>
+                                        <div class="histogram__content-chart" style="height:35px"></div>
+                                        <div class="histogram__content-chart" style="height:45px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:35px"></div>
+                                        <div class="histogram__content-chart" style="height:17px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#histogram"  class="preview__item-title">Histogram</a>
                             <div class="preview__item-subtitle">Container</div>
                         </div>
                         <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Histogram</div>
-                            <div class="preview__item-subtitle">Container</div>
-                        </div>
-                        <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Avatar</div>
+                            <div class="preview__item-content content-center">
+                                <div class="avatar">
+                                    <img src="../../assets/images/avatar.png" alt="avatar image" class="avatar__image">
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#avatar"  class="preview__item-title">Avatar</a>
                             <div class="preview__item-subtitle">Element</div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="preview__item-content">
+                                <div class="accordion">
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            Accordion item 1
+                                            <svg class="accordion__summary-icon">
+                                                <use xlink:href="../../assets/images/sprite.svg#arrowIcon"></use>
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__content">
+                                            Hidden content 1
+                                        </p>
+                                    </details>
+                                
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            Accordion item 2
+                                            <svg class="accordion__summary-icon">
+                                                <use xlink:href="../../assets/images/sprite.svg#arrowIcon"></use>
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__content">
+                                            Hidden content 2
+                                        </p>
+                                    </details>
+                                
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            Accordion item 3
+                                            <svg class="accordion__summary-icon">
+                                                <use xlink:href="../../assets/images/sprite.svg#arrowIcon"></use>
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__content">
+                                            Hidden content 3
+                                        </p>
+                                    </details>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#accordion"  class="preview__item-title">Accordion</a>
+                            <div class="preview__item-subtitle">Container</div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="preview__item-content">
+                                <div class="buttons">
+                                    <button class="buttons__item button button_type_primary mrg-btn">Primary</button>
+                                    <button class="buttons__item button button_type_primary button_disabled mrg-btn">Primary disabled</button>
+                                    <button class="buttons__item button button_type_secondary mrg-btn">Secondary</button>
+                                    <button class="buttons__item button button_type_secondary button_disabled mrg-btn">Secondary disabled</button>
+                                    <button class="buttons__item button button_type_alternate mrg-btn">Alternate</button>
+                                    <button class="buttons__item button button_type_alternate button_disabled mrg-btn">Alternate disabled</button>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#buttons"  class="preview__item-title">Buttons</a>
+                            <div class="preview__item-subtitle">Element</div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="preview__item-content">
+                                <div class="skeleton">
+                                    <div class="skeleton__header">
+                                        <div class="skeleton__img"></div>
+                                        <div class="skeleton__content">
+                                            <div class="skeleton__content-item">
+                                                <div class="skeleton__row skeleton__row_small"></div>
+                                            </div>
+                                            <div class="skeleton__content-item">
+                                                <div class="skeleton__row skeleton__row_medium"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skeleton__body">
+                                        <div class="skeleton__row skeleton__row_large"></div>
+                                        <div class="skeleton__row skeleton__row_large"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#skeleton"  class="preview__item-title">Skeleton</a>
+                            <div class="preview__item-subtitle">Container</div>
                         </div>
                     </div>
                 </div>
@@ -65,40 +382,364 @@
                 <div class="tabs__content tabs__content_complex">
                     <div class="preview">
                         <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Custom form elements</div>
+                            <div class="preview__item-content">
+                                <div class="calendar">
+                                    <div class="calendar__title">October 2019</div>
+                                    <div class="calendar__wrapper">
+                                        <div class="calendar__inner">
+                                            <span class="calendar__item calendar__item_day">Mon</span>
+                                            <span class="calendar__item calendar__item_day">Tue</span>
+                                            <span class="calendar__item calendar__item_day">Wed</span>
+                                            <span class="calendar__item calendar__item_day">Thu</span>
+                                            <span class="calendar__item calendar__item_day">Fri</span>
+                                            <span class="calendar__item calendar__item_day">Sat</span>
+                                            <span class="calendar__item calendar__item_day">Sun</span>
+                                            <span class="calendar__item"></span>
+                                            <span class="calendar__item"></span>
+                                            <span class="calendar__item"></span>
+                                            <span class="calendar__item"></span>
+                                            <span class="calendar__item">1</span>
+                                            <span class="calendar__item">2</span>
+                                            <span class="calendar__item">3</span>
+                                            <span class="calendar__item">4</span>
+                                            <span class="calendar__item">5</span>
+                                            <span class="calendar__item">6</span>
+                                            <span class="calendar__item">7</span>
+                                            <span class="calendar__item">8</span>
+                                            <span class="calendar__item">9</span>
+                                            <span class="calendar__item">10</span>
+                                            <span class="calendar__item">11</span>
+                                            <span class="calendar__item">12</span>
+                                            <span class="calendar__item">13</span>
+                                            <span class="calendar__item">14</span>
+                                            <span class="calendar__item">15</span>
+                                            <span class="calendar__item">16</span>
+                                            <span class="calendar__item">17</span>
+                                            <span class="calendar__item calendar__item_selected-day">18</span>
+                                            <span class="calendar__item calendar__item_selected">19</span>
+                                            <span class="calendar__item calendar__item_selected">20</span>
+                                            <span class="calendar__item calendar__item_selected">21</span>
+                                            <span class="calendar__item calendar__item_selected">22</span>
+                                            <span class="calendar__item calendar__item_selected-day">23</span>
+                                            <span class="calendar__item">24</span>
+                                            <span class="calendar__item">25</span>
+                                            <span class="calendar__item">26</span>
+                                            <span class="calendar__item">27</span>
+                                            <span class="calendar__item">28</span>
+                                            <span class="calendar__item">29</span>
+                                            <span class="calendar__item">30</span>
+                                            <span class="calendar__item">31</span>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#calendar"  class="preview__item-title">Calendar</a>
                             <div class="preview__item-subtitle">Container</div>
                         </div>
                         <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Calendar</div>
+                            <div class="preview__item-content content-center">
+                                <button id="modal-open" class="buttons__item button button_type_primary">Open modal</button>
+                    
+                                <div id="modal" class="modal">
+                                    <div class="modal__popup">
+                                        <svg id="modal-close" class="modal__icon">
+                                            <use xlink:href="../../assets/images/sprite.svg#closeIcon"></use>
+                                        </svg>
+                    
+                                        <h2 class="modal__title">Modal title</h2>
+                                        <div class="modal__content">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                            consequat duis enim
+                                            velit
+                                            mollit. Exercitation veniam consequat sunt nostrud amet.
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                            consequat duis enim
+                                            velit
+                                            mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#modal"  class="preview__item-title">Modal dialog</a>
                             <div class="preview__item-subtitle">Container</div>
                         </div>
                         <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Modal dialog</div>
+                            <div class="preview__item-content">
+                                <div class="histogram">
+                                    <div class="histogram__header">
+                                        <h3 class="histogram__header-title">
+                                            Total orders
+                                            <span class="histogram__header-subtitle">50254</span>
+                                        </h3>
+                                        <a href="/"  class="histogram__header-link">View all</a>
+                                    </div>
+                                    <div class="histogram__content">
+                                        <div class="histogram__content-chart" style="height:50px"></div>
+                                        <div class="histogram__content-chart" style="height:35px"></div>
+                                        <div class="histogram__content-chart" style="height:22px"></div>
+                                        <div class="histogram__content-chart" style="height:39px"></div>
+                                        <div class="histogram__content-chart" style="height:22px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:39px"></div>
+                                        <div class="histogram__content-chart" style="height:50px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:22px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:35px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:50px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:39px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:22px"></div>
+                                        <div class="histogram__content-chart" style="height:35px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:39px"></div>
+                                        <div class="histogram__content-chart" style="height:35px"></div>
+                                        <div class="histogram__content-chart" style="height:45px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:30px"></div>
+                                        <div class="histogram__content-chart" style="height:11px"></div>
+                                        <div class="histogram__content-chart" style="height:35px"></div>
+                                        <div class="histogram__content-chart" style="height:17px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#histogram"  class="preview__item-title">Histogram</a>
                             <div class="preview__item-subtitle">Container</div>
                         </div>
                         <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Histogram</div>
+                            <div class="preview__item-content">
+                                <div class="accordion">
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            Accordion item 1
+                                            <svg class="accordion__summary-icon">
+                                                <use xlink:href="../../assets/images/sprite.svg#arrowIcon"></use>
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__content">
+                                            Hidden content 1
+                                        </p>
+                                    </details>
+                    
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            Accordion item 2
+                                            <svg class="accordion__summary-icon">
+                                                <use xlink:href="../../assets/images/sprite.svg#arrowIcon"></use>
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__content">
+                                            Hidden content 2
+                                        </p>
+                                    </details>
+                    
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            Accordion item 3
+                                            <svg class="accordion__summary-icon">
+                                                <use xlink:href="../../assets/images/sprite.svg#arrowIcon"></use>
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__content">
+                                            Hidden content 3
+                                        </p>
+                                    </details>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#accordion"  class="preview__item-title">Accordion</a>
+                            <div class="preview__item-subtitle">Container</div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="preview__item-content">
+                                <div class="skeleton">
+                                    <div class="skeleton__header">
+                                        <div class="skeleton__img"></div>
+                                        <div class="skeleton__content">
+                                            <div class="skeleton__content-item">
+                                                <div class="skeleton__row skeleton__row_small"></div>
+                                            </div>
+                                            <div class="skeleton__content-item">
+                                                <div class="skeleton__row skeleton__row_medium"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skeleton__body">
+                                        <div class="skeleton__row skeleton__row_large"></div>
+                                        <div class="skeleton__row skeleton__row_large"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#skeleton"  class="preview__item-title">Skeleton</a>
                             <div class="preview__item-subtitle">Container</div>
                         </div>
                     </div>
-            
                 </div>
 
                 <div class="tabs__content tabs__content_simple">
                     <div class="preview">
                         <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Tooltip</div>
+                            <div class="preview__item-content content-center">
+                                <div class="tooltip active">
+                                    <svg class="tooltip__icon">
+                                        <use xlink:href="../../assets/images/sprite.svg#tooltipIcon"></use>
+                                    </svg>
+                                    <div class="tooltip__content">Helper Text</div>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#tooltip"  class="preview__item-title">Tooltip</a>
                             <div class="preview__item-subtitle">Element</div>
                         </div>
-                        
                         <div class="preview__item">
-                            <div class="preview__item-content"></div>
-                            <div class="preview__item-title">Avatar</div>
+                            <div class="preview__item-content">
+                                <div class="field mrg-btn">
+                                    <label class="field__label" for="input1">Label</label>
+                                    <span class="field__wrapper">
+                                        <input id="input1" type="text" class="field__input" placeholder="Placeholder" />
+                                        <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                                        <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg"
+                                            alt="success" />
+                                    </span>
+                                </div>
+                    
+                                <div class="field field_success mrg-btn">
+                                    <label class="field__label" for="input2">Success</label>
+                                    <span class="field__wrapper">
+                                        <input id="input2" type="text" class="field__input field__input_success" value="Success" />
+                                        <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                                        <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg"
+                                            alt="success" />
+                                    </span>
+                                </div>
+                    
+                                <div class="field mrg-btn">
+                                    <label class="field__label" for="input3">Focus</label>
+                                    <span class="field__wrapper">
+                                        <input id="input3" type="text" class="field__input" value="Filled Input" />
+                                        <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                                        <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg"
+                                            alt="success" />
+                                    </span>
+                                </div>
+                    
+                                <div class="field field_error mrg-btn">
+                                    <label class="field__label" for="input4">Error</label>
+                                    <span class="field__wrapper">
+                                        <input id="input4" type="text" class="field__input field__input_invalid" value="Error" />
+                                        <img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" />
+                                        <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg"
+                                            alt="success" />
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#fields"  class="preview__item-title">Custom form fields</a>
+                            <div class="preview__item-subtitle">Elements</div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="preview__item-content content-center">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" tabindex="1">
+                                    <span class="checkbox__item">
+                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="checkbox__icon">
+                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__label">Default</span>
+                                </label>
+                    
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" tabindex="1" checked>
+                                    <span class="checkbox__item">
+                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="checkbox__icon">
+                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__label">Checked</span>
+                                </label>
+                    
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" tabindex="1" disabled>
+                                    <span class="checkbox__item">
+                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="checkbox__icon">
+                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__label">Disabled</span>
+                                </label>
+                    
+                                <label class="radio-btn">
+                                    <input type="radio" class="radio-btn__input" tabindex="1">
+                                    <span class="radio-btn__item"></span>
+                                    <span class="radio-btn__label">Default</span>
+                                </label>
+                    
+                                <label class="radio-btn">
+                                    <input type="radio" class="radio-btn__input" tabindex="1" checked>
+                                    <span class="radio-btn__item"></span>
+                                    <span class="radio-btn__label">Checked</span>
+                                </label>
+                    
+                                <label class="radio-btn">
+                                    <input type="radio" class="radio-btn__input" tabindex="1" disabled>
+                                    <span class="radio-btn__item"></span>
+                                    <span class="radio-btn__label">Disabled</span>
+                                </label>
+                    
+                                <label class="toggler">
+                                    <input type="checkbox" class="toggler__input-hidden" tabindex="1">
+                                    <span class="toggler__point"></span>
+                                    <span class="toggler__label">Off</span>
+                                </label>
+                    
+                                <label class="toggler">
+                                    <input type="checkbox" class="toggler__input-hidden" checked tabindex="1">
+                                    <span class="toggler__point"></span>
+                                    <span class="toggler__label">On</span>
+                                </label>
+                    
+                                <label class="toggler">
+                                    <input type="checkbox" class="toggler__input-hidden" disabled tabindex="1">
+                                    <span class="toggler__point"></span>
+                                    <span class="toggler__label">Disabled</span>
+                                </label>
+                            </div>
+                            <a href="/pages/template.html#controls"  class="preview__item-title">Custom form controls</a>
+                            <div class="preview__item-subtitle">Elements</div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="preview__item-content content-center">
+                                <div class="avatar">
+                                    <img src="../../assets/images/avatar.png" alt="avatar image" class="avatar__image">
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#avatar"  class="preview__item-title">Avatar</a>
+                            <div class="preview__item-subtitle">Element</div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="preview__item-content">
+                                <div class="buttons">
+                                    <button class="buttons__item button button_type_primary mrg-btn">Primary</button>
+                                    <button class="buttons__item button button_type_primary button_disabled mrg-btn">Primary
+                                        disabled</button>
+                                    <button class="buttons__item button button_type_secondary mrg-btn">Secondary</button>
+                                    <button class="buttons__item button button_type_secondary button_disabled mrg-btn">Secondary
+                                        disabled</button>
+                                    <button class="buttons__item button button_type_alternate mrg-btn">Alternate</button>
+                                    <button class="buttons__item button button_type_alternate button_disabled mrg-btn">Alternate
+                                        disabled</button>
+                                </div>
+                            </div>
+                            <a href="/pages/template.html#buttons"  class="preview__item-title">Buttons</a>
                             <div class="preview__item-subtitle">Element</div>
                         </div>
                     </div>
