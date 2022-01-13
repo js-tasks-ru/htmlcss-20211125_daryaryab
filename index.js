@@ -1,8 +1,9 @@
 window.addEventListener('load', () => {
   initBurgerMenu();
+  removePreload();
 });
 
-function initBurgerMenu () {
+function initBurgerMenu() {
   const menu = document.getElementById('burger-menu');
   const menuClose = document.getElementById('burger-menu-close');
   const menuOpen = document.getElementById('burger-menu-open');
@@ -22,4 +23,8 @@ function initBurgerMenu () {
       }
     });
   }
+}
+
+function removePreload() {
+  document.body.classList.remove('preload');
 }
