@@ -3,10 +3,12 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
 @import '../../components/header.scss';
+@import '../../components/mobile-menu.scss';
 @import '../../components/preview.scss';
 @import '../../components/template.scss';
 @import '../../components/footer.scss';
 @import '../../components/tabs.scss';
+
 @import '../../components/accordion.scss';
 @import '../../components/avatar.scss';
 @import '../../components/buttons.scss';
@@ -16,6 +18,7 @@
 @import '../../components/modal.scss';
 @import '../../components/skeleton.scss';
 @import '../../components/tooltip.scss';
+@import '../../components/toggler.scss';
 
 
 :root {
@@ -45,7 +48,7 @@
     --primary: var(--blue);
     --primary-btn-hover: var(--dark-blue);
     --secondary: var(--purple);
-     --secondary-btn-hover: var(--dark-purple);
+    --secondary-btn-hover: var(--dark-purple);
 }
 
 * {
@@ -67,4 +70,11 @@
 
 .mrg-btn {
     margin-bottom: 6px;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
