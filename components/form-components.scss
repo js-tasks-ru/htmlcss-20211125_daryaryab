@@ -169,7 +169,8 @@
       position: absolute;
       top: 50%;
       left: 2px;
-      transform: translateY(-50%);
+      transform: translateX(0%) translateY(-50%);
+      transition: transform 200ms ease-in-out;
     }
   }
 
@@ -182,7 +183,7 @@
     clip: rect(0, 0, 0, 0);
     opacity: 0;
     &:focus ~ .toggler__label,
-    &_:hover ~ .toggler__label {
+    &:hover ~ .toggler__label {
       border-bottom: 1px solid var(--blue);
     }
 
@@ -192,8 +193,7 @@
 
     &:checked ~ .toggler__point:after {
       background-color: var(--white);
-      left: initial;
-      right: 2px;
+      transform: translateX(95%) translateY(-50%);
     }
 
     &:checked:focus ~ .toggler__label,
@@ -232,6 +232,7 @@
     cursor: pointer;
     font: 400 20px/26px 'Inter', sans-serif;
     color: var(--grey-4);
+    transition: border-color 200ms ease-in-out;
 
     &::placeholder {
       color: var(--grey-2);
@@ -239,11 +240,11 @@
 
     &:hover,
     &:focus {
-      border: 1px solid var(--blue);
+      border-color: var(--blue);
     }
 
     &_invalid {
-      border: 1px solid var(--red);
+      border-color: var(--red);
     }
 
     &_invalid ~ .field__icon_invalid {
@@ -252,7 +253,7 @@
 
     &_invalid:focus,
     &_invalid:hover {
-      border: 1px solid var(--red);
+      border-color: var(--red);
     }
 
     &_success ~ .field__icon_success {
@@ -261,7 +262,7 @@
 
     &_success:focus,
     &_success:hover {
-      border: 1px solid var(--grey-2);
+      border-color: var(--grey-2);
     }
   }
 

@@ -1,4 +1,6 @@
 .accordion {
+  width: 100%;
+  
   &__item {
     display: block;
     border: 1px solid var(--grey-3);

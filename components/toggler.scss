@@ -23,7 +23,8 @@
             position: absolute;
             top: 50%;
             left: 2px;
-            transform: translateY(-50%);
+            transform: translateX(0%) translateY(-50%);
+            transition: transform 200ms ease-in-out;
         }
     }
 
@@ -45,8 +46,7 @@
             background-color: var(--blue);
             &:after {
                 background-color: var(--white);
-                left: initial;
-                right: 2px;
+                transform: translateX(95%) translateY(-50%);
             }
         }
 

@@ -9,9 +9,9 @@
 <body>
   <div class="page">
     <div class="page__header">
-      <div class="page__header-logo">
+      <a href="/index.html" class="page__header-logo">
         <img src="../assets/images/logo.svg" alt="logo">
-      </div>
+      </a>
     </div>
     <div class="page__main">
       <div class="page__main-sidebar">
@@ -42,6 +42,14 @@
           <div class="avatar">
             <img src="../../assets/images/avatar.png" alt="avatar image" class="avatar__image">
           </div>
+
+          <pre>
+            <code>
+              &lt;div class="avatar"&gt;
+                &nbsp;&lt;img src="../../assets/images/avatar.png" alt="avatar image" class="avatar__image"&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
         </div>
 
         <div id="buttons" class="page__main-content-item">
@@ -53,6 +61,29 @@
             <button class="buttons__item button button_type_alternate mrg-btn">Alternate</button>
             <button class="buttons__item button button_type_alternate button_disabled mrg-btn">Alternate disabled</button>
           </div>
+
+          <pre>
+            <code>
+              &lt;button class="buttons__item button button_type_primary mrg-btn"&gt;
+              &nbsp;Primary
+              &lt;/button&gt;
+              &lt;button class="buttons__item button button_type_primary button_disabled mrg-btn"&gt;
+              &nbsp;Primary disabled
+              &lt;/button&gt;
+              &lt;button class="buttons__item button button_type_secondary mrg-btn"&gt;
+              &nbsp;Secondary
+              &lt;/button&gt;
+              &lt;button class="buttons__item button button_type_secondary button_disabled mrg-btn"&gt;
+              &nbsp;Secondary disabled
+              &lt;/button&gt;
+              &lt;button class="buttons__item button button_type_alternate mrg-btn"&gt;
+              &nbsp;Alternate
+              &lt;/button&gt;
+              &lt;button class="buttons__item button button_type_alternate button_disabled mrg-btn"&gt;
+              &nbsp;Alternate disabled
+              &lt;/button&gt;
+            </code>
+          </pre>
         </div>
 
         <div id="controls" class="page__main-content-item">
@@ -124,6 +155,79 @@
             <span class="toggler__point"></span>
             <span class="toggler__label">Disabled</span>
           </label>
+
+          <pre>
+            <code>
+              &lt;label class="checkbox"&gt;
+              &nbsp;&lt;input type="checkbox" class="checkbox__input" tabindex="1"&gt;
+              &nbsp;&lt;span class="checkbox__item"&gt;
+              &nbsp;&nbsp;&lt;svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="checkbox__icon"&gt;
+              &lt;path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /&gt;
+              &nbsp;&nbsp;&lt;/svg&gt;
+              &nbsp;&lt;/span&gt;
+              &nbsp;&lt;span class="checkbox__label"&gt;Default&lt;/span&gt;
+              &lt;/label&gt;
+              
+              &lt;label class="checkbox"&gt;
+              &nbsp;&lt;input type="checkbox" class="checkbox__input" tabindex="1" checked&gt;
+              &nbsp;&lt;span class="checkbox__item"&gt;
+              &nbsp;&nbsp;&lt;svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="checkbox__icon"&gt;
+              &lt;path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /&gt;
+              &nbsp;&nbsp;&lt;/svg&gt;
+              &nbsp;&lt;/span&gt;
+              &nbsp;&lt;span class="checkbox__label"&gt;Checked&lt;/span&gt;
+              &lt;/label&gt;
+              
+              &lt;label class="checkbox"&gt;
+              &nbsp;&lt;input type="checkbox" class="checkbox__input" tabindex="1" disabled&gt;
+              &nbsp;&lt;span class="checkbox__item"&gt;
+              &nbsp;&nbsp;&lt;svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="checkbox__icon"&gt;
+              &lt;path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /&gt;
+              &nbsp;&nbsp;&lt;/svg&gt;
+              &nbsp;&lt;/span&gt;
+              &nbsp;&lt;span class="checkbox__label"&gt;Disabled&lt;/span&gt;
+              &lt;/label&gt;
+              
+              &lt;label class="radio-btn"&gt;
+              &nbsp;&lt;input type="radio" class="radio-btn__input" tabindex="1"&gt;
+              &nbsp;&lt;span class="radio-btn__item"&gt;&lt;/span&gt;
+              &nbsp;&lt;span class="radio-btn__label"&gt;Default&lt;/span&gt;
+              &lt;/label&gt;
+              
+              &lt;label class="radio-btn"&gt;
+              &nbsp;&lt;input type="radio" class="radio-btn__input" tabindex="1" checked&gt;
+              &nbsp;&lt;span class="radio-btn__item"&gt;&lt;/span&gt;
+              &nbsp;&lt;span class="radio-btn__label"&gt;Checked&lt;/span&gt;
+              &lt;/label&gt;
+              
+              &lt;label class="radio-btn"&gt;
+              &nbsp;&lt;input type="radio" class="radio-btn__input" tabindex="1" disabled&gt;
+              &nbsp;&lt;span class="radio-btn__item"&gt;&lt;/span&gt;
+              &nbsp;&lt;span class="radio-btn__label"&gt;Disabled&lt;/span&gt;
+              &lt;/label&gt;
+              
+              &lt;label class="toggler"&gt;
+              &nbsp;&lt;input type="checkbox" class="toggler__input-hidden" tabindex="1"&gt;
+              &nbsp;&lt;span class="toggler__point"&gt;&lt;/span&gt;
+              &nbsp;&lt;span class="toggler__label"&gt;Off&lt;/span&gt;
+              &lt;/label&gt;
+              
+              &lt;label class="toggler"&gt;
+              &nbsp;&lt;input type="checkbox" class="toggler__input-hidden" checked tabindex="1"&gt;
+              &nbsp;&lt;span class="toggler__point"&gt;&lt;/span&gt;
+              &nbsp;&lt;span class="toggler__label"&gt;On&lt;/span&gt;
+              &lt;/label&gt;
+              
+              &lt;label class="toggler"&gt;
+              &nbsp;&lt;input type="checkbox" class="toggler__input-hidden" disabled tabindex="1"&gt;
+              &nbsp;&lt;span class="toggler__point"&gt;&lt;/span&gt;
+              &nbsp;&lt;span class="toggler__label"&gt;Disabled&lt;/span&gt;
+              &lt;/label&gt;
+            </code>
+          </pre>
         </div>
 
         <div id="fields" class="page__main-content-item">
@@ -162,6 +266,46 @@
               <img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success" />
             </span>
           </div>
+
+          <pre>
+            <code>
+                &lt;div class="field mrg-btn"&gt;
+                &nbsp;&lt;label class="field__label" for="input1"&gt;Label&lt;/label&gt;
+                &nbsp;&lt;span class="field__wrapper"&gt;
+                &nbsp;&nbsp;&lt;input id="input1" type="text" class="field__input" placeholder="Placeholder" /&gt;
+                &nbsp;&nbsp;&lt;img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" /&gt;
+                &nbsp;&nbsp;&lt;img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success"/&gt;
+                &nbsp;&lt;/span&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="field field_success mrg-btn"&gt;
+                &nbsp;&lt;label class="field__label" for="input2"&gt;Success&lt;/label&gt;
+                &nbsp;&lt;span class="field__wrapper"&gt;
+                &nbsp;&nbsp;&lt;input id="input2" type="text" class="field__input field__input_success" value="Success" /&gt;
+                &nbsp;&nbsp;&lt;img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" /&gt;
+                &nbsp;&nbsp;&lt;img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success"/&gt;
+                &nbsp;&lt;/span&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="field mrg-btn"&gt;
+                &nbsp;&lt;label class="field__label" for="input3"&gt;Focus&lt;/label&gt;
+                &nbsp;&lt;span class="field__wrapper"&gt;
+                &nbsp;&nbsp;&lt;input id="input3" type="text" class="field__input" value="Filled Input" /&gt;
+                &nbsp;&nbsp;&lt;img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" /&gt;
+                &nbsp;&nbsp;&lt;img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success"/&gt;
+                &nbsp;&lt;/span&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="field field_error mrg-btn"&gt;
+                &nbsp;&lt;label class="field__label" for="input4"&gt;Error&lt;/label&gt;
+                &nbsp;&lt;span class="field__wrapper"&gt;
+                &nbsp;&nbsp;&lt;input id="input4" type="text" class="field__input field__input_invalid" value="Error" /&gt;
+                &nbsp;&nbsp;&lt;img class="field__icon field__icon_invalid" src="../../assets/images/error-icon.svg" alt="error" /&gt;
+                &nbsp;&nbsp;&lt;img class="field__icon field__icon_success" src="../../assets/images/success-icon.svg" alt="success"/&gt;
+                &nbsp;&lt;/span&gt;
+                &lt;/div&gt;
+            </code>
+          </pre>
         </div>
 
         <div id="tooltip" class="page__main-content-item">
@@ -171,6 +315,17 @@
             </svg>
             <div class="tooltip__content">Helper Text</div>
           </div>
+
+          <pre>
+            <code>
+              &lt;div class="tooltip"&gt;
+              &nbsp;&lt;svg class="tooltip__icon"&gt;
+              &nbsp;&nbsp;&lt;use xlink:href="../../assets/images/sprite.svg#tooltipIcon"&gt;&lt;/use&gt;
+              &nbsp;&lt;/svg&gt;
+              &nbsp;&lt;div class="tooltip__content"&gt;Helper Text&lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
         </div>
 
         <div id="accrodion" class="page__main-content-item">
@@ -211,6 +366,48 @@
               </p>
             </details>
           </div>
+
+          <pre>
+            <code>
+              &lt;div class="accordion"&gt;
+              &nbsp;&lt;details class="accordion__item"&gt;
+              &nbsp;&nbsp;&lt;summary class="accordion__summary"&gt;
+              &nbsp;&nbsp;&nbsp;&nbsp;Accordion item 1
+              &nbsp;&nbsp;&nbsp;&lt;svg class="accordion__summary-icon"&gt;
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;use xlink:href="../../assets/images/sprite.svg#arrowIcon"&gt;&lt;/use&gt;
+              &nbsp;&nbsp;&nbsp;&lt;/svg&gt;
+              &nbsp;&nbsp;&lt;/summary&gt;
+              &nbsp;&nbsp;&lt;p class="accordion__content"&gt;
+              &nbsp;&nbsp;&nbsp;Hidden content 1
+              &nbsp;&nbsp;&lt;/p&gt;
+              &nbsp;&lt;/details&gt;
+              
+              &nbsp;&lt;details class="accordion__item"&gt;
+              &nbsp;&nbsp;&lt;summary class="accordion__summary"&gt;
+              &nbsp;&nbsp;&nbsp;Accordion item 2
+              &nbsp;&nbsp;&nbsp;&lt;svg class="accordion__summary-icon"&gt;
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;use xlink:href="../../assets/images/sprite.svg#arrowIcon"&gt;&lt;/use&gt;
+              &nbsp;&nbsp;&nbsp;&lt;/svg&gt;
+              &nbsp;&nbsp;&lt;/summary&gt;
+              &nbsp;&nbsp;&lt;p class="accordion__content"&gt;
+              &nbsp;&nbsp;&nbsp;Hidden content 2
+              &nbsp;&nbsp;&nbsp;&lt;/p&gt;
+              &nbsp;&lt;/details&gt;
+              
+              &nbsp;&lt;details class="accordion__item"&gt;
+              &nbsp;&nbsp;&lt;summary class="accordion__summary"&gt;
+              &nbsp;&nbsp;&nbsp;Accordion item 3
+              &nbsp;&nbsp;&nbsp;&lt;svg class="accordion__summary-icon"&gt;
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;use xlink:href="../../assets/images/sprite.svg#arrowIcon"&gt;&lt;/use&gt;
+              &nbsp;&nbsp;&nbsp;&lt;/svg&gt;
+              &nbsp;&nbsp;&lt;/summary&gt;
+              &nbsp;&nbsp;&lt;p class="accordion__content"&gt;
+              &nbsp;&nbsp;&nbsp;Hidden content 3
+              &nbsp;&nbsp;&lt;/p&gt;
+              &nbsp;&lt;/details&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
         </div>
 
         <div id="calendar" class="page__main-content-item">
@@ -264,6 +461,60 @@
               </div>
             </div>
           </div>
+
+          <pre>
+            <code>
+              &lt;div class="calendar"&gt;
+              &nbsp;&lt;div class="calendar__title"&gt;October 2019&lt;/div&gt;
+              &nbsp;&lt;div class="calendar__wrapper"&gt;
+              &nbsp;&nbsp;&lt;div class="calendar__inner"&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_day"&gt;Mon&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_day"&gt;Tue&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_day"&gt;Wed&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_day"&gt;Thu&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_day"&gt;Fri&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_day"&gt;Sat&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_day"&gt;Sun&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;1&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;2&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;3&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;4&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;5&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;6&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;7&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;8&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;9&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;10&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;11&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;12&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;13&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;14&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;15&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;16&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;17&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_selected-day"&gt;18&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_selected"&gt;19&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_selected"&gt;20&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_selected"&gt;21&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_selected"&gt;22&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item calendar__item_selected-day"&gt;23&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;24&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;25&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;26&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;27&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;28&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;29&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;30&lt;/span&gt;
+              &nbsp;&nbsp;&nbsp;&lt;span class="calendar__item"&gt;31&lt;/span&gt;
+              &nbsp;&nbsp;&lt;/div&gt;
+              &nbsp;&lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
         </div>
 
         <div id="histogram" class="page__main-content-item">
@@ -308,12 +559,58 @@
               <div class="histogram__content-chart" style="height:17px"></div>
             </div>
           </div>
+
+          <pre>
+            <code>
+              &lt;div class="histogram"&gt;
+              &nbsp;&lt;div class="histogram__header"&gt;
+              &nbsp;&nbsp;&lt;h3 class="histogram__header-title"&gt;
+              &nbsp;&nbsp;&nbsp;Total orders
+              &nbsp;&nbsp;&nbsp;&lt;span class="histogram__header-subtitle"&gt;50254&lt;/span&gt;
+              &nbsp;&nbsp;&lt;/h3&gt;
+              &nbsp;&nbsp;&lt;a href="/pages/template.html#" class="histogram__header-link"&gt;View all&lt;/a&gt;
+              &nbsp;&lt;/div&gt;
+              &nbsp;&lt;div class="histogram__content"&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:50px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:35px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:22px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:39px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:22px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:30px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:39px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:50px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:11px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:22px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:30px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:35px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:11px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:50px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:11px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:39px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:30px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:22px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:35px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:30px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:11px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:39px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:35px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:45px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:30px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:11px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:30px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:11px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:35px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="histogram__content-chart" style="height:17px"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
         </div>
 
         <div id="modal" class="page__main-content-item">
           <button id="modal-open" class="buttons__item button button_type_primary">Open modal</button>
           
-          <div id="modal" class="modal">
+          <div id="modal__popup" class="modal">
             <div class="modal__popup">
               <svg id="modal-close" class="modal__icon">
                 <use xlink:href="../../assets/images/sprite.svg#closeIcon"></use>
@@ -330,6 +627,24 @@
               </div>
             </div>
           </div>
+
+          <pre>
+            <code>
+              &lt;div id="modal" class="modal"&gt;
+              &nbsp;&lt;div class="modal__popup"&gt;
+              &nbsp;&nbsp;&lt;svg id="modal-close" class="modal__icon"&gt;
+              &nbsp;&nbsp;&nbsp;&lt;use xlink:href="../../assets/images/sprite.svg#closeIcon"&gt;&lt;/use&gt;
+              &nbsp;&nbsp;&lt;/svg&gt;
+
+              &nbsp;&nbsp;&lt;h2 class="modal__title"&gt;Modal title&lt;/h2&gt;
+              &nbsp;&nbsp;&lt;div class="modal__content"&gt;
+              &nbsp;&nbsp;&nbsp;Amet minim mollit non deserunt ullamco est 
+              &nbsp;&nbsp;&nbsp;sit aliqua dolor do amet sint. Velit officia consequat duis enim. 
+              &nbsp;&nbsp;&lt;/div&gt;
+              &nbsp;&lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
         </div>
 
         <div id="skeleton" class="page__main-content-item">
@@ -350,11 +665,40 @@
               <div class="skeleton__row skeleton__row_large"></div>
             </div>
           </div>
+
+          <pre>
+            <code>
+              &lt;div class="skeleton"&gt;
+              &nbsp;&lt;div class="skeleton__header"&gt;
+              &nbsp;&nbsp;&lt;div class="skeleton__img"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="skeleton__content"&gt;
+              &nbsp;&nbsp;&nbsp;&lt;div class="skeleton__content-item"&gt;
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="skeleton__row skeleton__row_small"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&nbsp;&lt;/div&gt;
+              &nbsp;&nbsp;&nbsp;&lt;div class="skeleton__content-item"&gt;
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="skeleton__row skeleton__row_medium"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&nbsp;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;/div&gt;
+              &nbsp;&lt;/div&gt;
+              &nbsp;&lt;div class="skeleton__body"&gt;
+              &nbsp;&nbsp;&lt;div class="skeleton__row skeleton__row_large"&gt;&lt;/div&gt;
+              &nbsp;&nbsp;&lt;div class="skeleton__row skeleton__row_large"&gt;&lt;/div&gt;
+              &nbsp;&lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
         </div>
     </div>
     <div class="page__footer">
       Reusable component library
     </div>
   </div>
+
+  <div class="page__navigate">
+    <svg id="arrow-top" class="page__navigate-icon">
+      <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+    </svg>
+  </div>
+<script type='module' src="../index.js"></script>
 </body>
 </html>
