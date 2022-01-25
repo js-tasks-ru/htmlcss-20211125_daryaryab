@@ -1,6 +1,5 @@
 .preview {
-  display: flex;
-  flex-wrap: wrap;
+  @mixin display-flex;
   gap: 30px;
   padding: 67px 0;
   box-sizing: border-box;
@@ -9,8 +8,7 @@
 
 
   &__item {
-    display: flex;
-    flex-wrap: wrap;
+    @mixin display-flex;
     justify-content: center;
     align-items: flex-end;
     gap: 10px;
@@ -30,14 +28,14 @@
 
     &-title {
       width: 100%;
-      font: 500 21px/25px 'Roboto', sans-serif;
+      font: 500 21px/25px $font-roboto;
       color: var(--black);
       cursor: pointer;
       text-decoration: none;
     }
 
     &-subtitle {
-      font: 500 21px/25px 'Roboto', sans-serif;
+      font: 500 21px/25px $font-roboto;
       color: var(--grey-3);
     }
   }
@@ -53,11 +51,11 @@
       padding: 8px;
       align-items: flex-start;
       &-title {
-        font: 400 16px/24px 'Inter', sans-serif;
+        @mixin text-medium;
       }
 
       &-subtitle {
-        font: 400 14px/22px 'Inter', sans-serif;
+        font: 400 14px/22px $font-inter;
       }
     }
   }

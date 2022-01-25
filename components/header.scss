@@ -6,7 +6,7 @@
     box-sizing: border-box;
 
     &__title {
-        font: 500 50px/64px 'Inter', 'sans-serif';
+        font: 500 50px/64px $font-inter;
         color: var(--black);
         margin: 40px 0;
     }
@@ -40,7 +40,7 @@
         }
 
         &__title {
-            font: 400 28px/38px 'Inter', sans-serif;
+            font: 400 28px/38px $font-inter;
             margin: 48px 0 32px;
         }
 

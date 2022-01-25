@@ -1,0 +1,30 @@
+$font-inter: 'Inter', sans-serif;
+
+$font-roboto: 'Roboto', sans-serif;
+
+@define-mixin text-medium {
+  font: 400 16px/24px $font-inter;
+}
+
+@define-mixin text-medium-bold {
+  font: 600 16px/24px $font-inter;
+}
+
+@define-mixin text-large {
+  font: 400 20px/26px $font-inter;
+}
+
+@define-mixin text-large-bold {
+  font: 600 20px/26px $font-inter;
+}
+
+@define-mixin display-flex {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+@define-mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -9,7 +9,7 @@
     margin: 0 0 8px;
     box-sizing: border-box;
     cursor: pointer;
-    font: 400 16px/24px 'Inter', sans-serif;
+    @mixin text-medium;
     &:last-child {
       margin-bottom: 0;
     }
@@ -18,7 +18,7 @@
   &__summary {
     position: relative;
     display: block;
-    font: 400 16px/24px 'Inter', sans-serif;
+    @mixin text-medium;
     &-icon {
       position: absolute;
       top: 50%;
@@ -37,7 +37,7 @@
 
   &__content {
     margin: 16px 0 0;
-    font: 400 16px/24px 'Inter', sans-serif;
+    @mixin text-medium;
   }
 
   /* нестандартный псевдоэлемент Google Chrome */

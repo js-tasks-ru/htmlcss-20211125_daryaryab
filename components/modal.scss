@@ -9,8 +9,7 @@
   background-color: rgba(196, 196, 196, .5);
 
   &__popup {
-    display: flex;
-    flex-wrap: wrap;
+   @mixin display-flex;
     width: 428px;
     height: 294px;
     position: absolute;
@@ -37,11 +36,11 @@
   &__title {
     display: flex;
     width: 100%;
-    font: 600 16px/24px 'Inter', sans-serif;
+    @mixin text-medium-bold;
     margin: 0 0 14px;
   }
 
   &__content {
-    font: 400 16px/24px 'Inter', sans-serif;
+    @mixin text-medium;
   }
 }

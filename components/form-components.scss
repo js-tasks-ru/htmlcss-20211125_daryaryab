@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font: 400 16px/24px 'Inter', sans-serif;
+  @mixin text-medium;
   color: var(--grey4);
   margin: 6px 0;
   width: 50%;
@@ -11,9 +11,7 @@
   }
 
   &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @mixin flex-center;
     width: 28px;
     height: 28px;
     background-color: var(--white);
@@ -63,7 +61,7 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font: 400 16px/24px 'Inter', sans-serif;
+  @mixin text-medium;
   color: var(--grey-4);
   margin: 6px 0;
   width: 50%;
@@ -73,9 +71,7 @@
 
   &__item {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @mixin flex-center;
     width: 28px;
     height: 28px; 
     background-color: var(--white);
@@ -230,7 +226,7 @@
     padding: 17px 17px 13px 24px;
     box-sizing: border-box;
     cursor: pointer;
-    font: 400 20px/26px 'Inter', sans-serif;
+    @mixin text-large;
     color: var(--grey-4);
     transition: border-color 200ms ease-in-out;
 
@@ -269,7 +265,7 @@
   &__label {
     display: inline-flex;
     width: 100%;
-    font: 500 12px/18px 'Inter', sans-serif;
+    font: 500 12px/18px $font-inter;
     margin: 0 0 5px;
     color: var(--grey-3);
     text-transform: uppercase;
