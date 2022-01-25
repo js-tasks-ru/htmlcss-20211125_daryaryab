@@ -1,6 +1,6 @@
 @import '../fonts/fonts.scss';
-
 @import '../../node_modules/normalize.css/normalize.css';
+@import '../../components/mixins.scss';
 
 @import '../../components/header.scss';
 @import '../../components/mobile-menu.scss';
@@ -8,7 +8,18 @@
 @import '../../components/template.scss';
 @import '../../components/footer.scss';
 @import '../../components/tabs.scss';
+
+@import '../../components/accordion.scss';
+@import '../../components/avatar.scss';
+@import '../../components/buttons.scss';
+@import '../../components/calendar.scss';
+@import '../../components/form-components.scss';
+@import '../../components/histogram.scss';
+@import '../../components/modal.scss';
+@import '../../components/skeleton.scss';
+@import '../../components/tooltip.scss';
 @import '../../components/toggler.scss';
+
 
 :root {
     --white: #ffffff;
@@ -50,6 +61,17 @@
     margin: 0 auto;
 }
 
+.content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mrg-btn {
+    margin-bottom: 6px;
+}
+
 .preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -57,3 +79,17 @@
   -o-transition: none !important;
 }
 
+pre {
+    width: 100%;
+    overflow-wrap: anywhere;
+}
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  white-space: pre-line;
+  padding: 10px;
+}

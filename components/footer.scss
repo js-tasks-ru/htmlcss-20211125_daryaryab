@@ -6,12 +6,12 @@
     box-sizing: border-box;
 
     &__title {
-        font: 500 38px/48px 'Inter', 'sans-serif';
+        font: 500 38px/48px $font-inter;
         color: var(--black);
     }
 
     &__text {
-        font: 400 16px/24px 'Inter', 'sans-serif';
+        @mixin text-medium;
         color: var(--black);
         margin: 32px auto;
     }
@@ -23,7 +23,7 @@
         text-align: left;
 
         &__title {
-            font: 400 28px/38px 'Inter', sans-serif;
+            font: 400 28px/38px $font-inter;
         }
 
         &__text {

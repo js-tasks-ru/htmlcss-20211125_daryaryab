@@ -1,0 +1,48 @@
+.accordion {
+  width: 100%;
+  
+  &__item {
+    display: block;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 24px 32px;
+    margin: 0 0 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    @mixin text-medium;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__summary {
+    position: relative;
+    display: block;
+    @mixin text-medium;
+    &-icon {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 26px;
+      height: 24px;
+      fill: var(--black);
+      transition: transform 400ms ease-in-out;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__item[open] > .accordion__summary > .accordion__summary-icon {
+    transform: rotate(180deg);
+  }
+
+  &__content {
+    margin: 16px 0 0;
+    @mixin text-medium;
+  }
+
+  /* нестандартный псевдоэлемент Google Chrome */
+  &__summary::-webkit-details-marker { 
+    display: none; 
+    font-size: 0;
+  }
+}
