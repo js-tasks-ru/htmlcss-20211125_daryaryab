@@ -14,11 +14,16 @@
     &__wrapper {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     &__logo {
         width: 110px;
         height: 32px;
+    }
+
+    &__menu {
+        display: none;
     }
 
     &__menu-icon {

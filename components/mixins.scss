@@ -28,3 +28,12 @@ $font-roboto: 'Roboto', sans-serif;
   align-items: center;
   justify-content: center;
 }
+
+@define-mixin chart {
+  visibility: hidden;
+  height: 0;
+  animation: animate-height;
+  animation-timing-function: cubic-bezier(.35,.95,.67,.99);
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+}

@@ -1,9 +1,8 @@
 .histogram {
   @mixin display-flex;
   width: 100%;
-  height: 100%;
+  height: 354px;
   padding: 16px 24px;
-  max-width: 354px;
   background-color: var(--white);
   border: 1px solid var(--grey-3);
   box-sizing: border-box;
@@ -34,16 +33,41 @@
   }
 
   &__content {
-    display: flex;
+    height: 100%;
+    position: relative;
     width: 100%;
-    margin: 39px 0 0;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1px;
-
+    height: auto;
+    
     &-chart {
-      flex: 1 1 9px;
       background-color: var(--dark-blue);
+      @mixin chart;
+      bottom: 0;
+      cursor: pointer;
+      height: 0;
+      position: absolute;
+      text-align: center;
+      width: 10px; 
+      left: 0;
+      @for $i from 1 to 30 {
+        &:nth-child($i) {
+          left: calc((10 * $i) - 11 + $i)px;
+        }
+      }
     }
+
+    @for $i from 1 to 30 {
+      .histogram__content-chart-$i {
+        animation-delay: .4s;
+      }
+    }
+  }
+}
+
+@keyframes animate-height {
+  0% {
+    height: 0;
+  }
+  100% {
+    visibility: visible;
   }
 }

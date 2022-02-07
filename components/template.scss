@@ -9,6 +9,8 @@ html {
   background-color: var(--grey-1);
 
   &__header {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 25px 0 32px;
     box-sizing: border-box;
@@ -96,6 +98,10 @@ html {
       height: 26px;
       fill: var(--grey-4);
     }
+  }
+
+  .theme-toggler {
+    margin-right: 40px;
   }
 
   #fields {

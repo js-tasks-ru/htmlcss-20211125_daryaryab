@@ -19,6 +19,7 @@
 @import '../../components/skeleton.scss';
 @import '../../components/tooltip.scss';
 @import '../../components/toggler.scss';
+@import '../../components/theme-toggler.scss';
 
 
 :root {
@@ -26,10 +27,8 @@
     --black: #212429;
     --pink: #F784AD;
     --purple: #7048E8;
-    --blue: #374FC7;
     --dark-blue: #4263EB;
     --dark-purple: #5028C6;
-    --dark-blue: #2342C0;
     --blue: #4263EB;
     --medium-blue: #374FC7;
     --light-blue: rgba(160, 177, 245, .2);
@@ -49,6 +48,19 @@
     --primary-btn-hover: var(--dark-blue);
     --secondary: var(--purple);
     --secondary-btn-hover: var(--dark-purple);
+}
+
+html[data-theme-dark] * { 
+    --white: #212429;
+    --black: #ffffff;
+   
+    --grey-1: #334D6E;
+    --grey-2: #495057;
+    --grey-3: #90A0B7;
+    --grey-4: #DDE2E5;
+    --grey-5: #ACB5BD;
+    --grey-6: #F9FAFC;
+    --grey-7: #F8F9FA;
 }
 
 * {
