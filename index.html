@@ -60,6 +60,18 @@
                     <a href="/index.html" class="header__logo">
                         <img src="./assets/images/logo.svg" alt="logo">
                     </a>
+                    <div class="theme-toggler">
+                        <svg class="theme-toggler-icon active">
+                            <use xlink:href="../../assets/images/sprite.svg#theme-light"></use>
+                        </svg>
+                        <label class="theme-toggler-item toggler">
+                            <input id="theme-changer" type="checkbox" class="toggler__input-hidden" tabindex="1">
+                            <span class="toggler__point"></span>
+                        </label>
+                        <svg class="theme-toggler-icon">
+                            <use xlink:href="../../assets/images/sprite.svg#theme-dark"></use>
+                        </svg>
+                    </div>
                 </div>
                 <h1 class="header__title">Reusable component library</h1>
             </div>

@@ -12,6 +12,7 @@
 
   &__item {
     @mixin flex-center;
+    position: relative;
     width: 28px;
     height: 28px;
     background-color: var(--white);
@@ -40,6 +41,23 @@
       border: 1px solid var(--blue);
     }
 
+    &:checked ~ .checkbox__item:after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--black);
+      opacity: 0;
+      animation-duration: .3s;
+      animation-name: checkbox-shadow;
+      animation-iteration-count: 1;
+      animation-direction: Normal;
+    }
+
     &:disabled ~.checkbox__item {
       color: var(--grey-2);
       cursor: not-allowed;
@@ -56,6 +74,8 @@
     } 
   }
 }
+
+
 
 .radio-btn {
   display: inline-flex;
@@ -279,6 +299,23 @@
     right: 18px;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+@keyframes checkbox-shadow {
+  0% {
+    opacity: 0;
+    transform: scale(.5) translate(-85%, -85%);
+  }
+
+  50% {
+    opacity: .2;
+    transform: scale(1.4) translate(-35%, -35%);
+  }
+  
+  100% {
+    opacity: .4;
+    transform: scale(1.75) translate(-30%, -30%);
   }
 }
 

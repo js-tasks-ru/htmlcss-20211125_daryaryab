@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
   initBurgerMenu();
   initModalPopup();
+  initThemeChanger();
   removePreload();
 });
 
@@ -70,5 +71,14 @@ function scrollToTop() {
      document.body.scrollTop = 0;
      document.documentElement.scrollTop = 0;
    });
+}
+
+function initThemeChanger() {
+  const changer = document.getElementById('theme-changer');
+  const html = document.documentElement;
+
+  changer.addEventListener('change', function () {
+    html.toggleAttribute('data-theme-dark');
+  });
 }
 
